@@ -1,0 +1,2676 @@
+.w3-animate-right {
+    position: relative;
+    -webkit-animation: animateright 0.4s;
+    animation: animateright 0.4s
+}
+
+
+@keyframes animateright {
+    from {
+        right: -25px;
+        opacity: 0
+    }
+
+    to {
+        right: 25px;
+        opacity: 1
+    }
+}
+
+.trump-right {
+    position: relative;
+    -webkit-animation: trump-right 0.4s;
+    animation: trump-right 0.4s
+}
+
+@keyframes trump-right {
+    from {
+
+    }
+
+    to {
+        left: 60px;
+    }
+}
+
+@keyframes trump-right {
+    from {
+
+    }
+
+    to {
+        left: 44px;
+    }
+}
+
+.fadeIn {
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.card {
+  width: 71px;
+  height: 100px;
+  border-radius: 3px;
+  top: 0px;
+  /*will-change: transform;*/
+}
+
+.card:not(.ui-draggable) {
+  transition: top 0.2s, left 0.2s, transform 0.2s;
+  -webkit-transition: top 0.2s, left 0.2s, transform 0.2s;
+  -moz-transition: top 0.2s, left 0.2s, transform 0.2s;
+  -o-transition: top 0.2s, left 0.2s, transform 0.2s;
+}
+
+.card.animationCard_table_pile {
+  animation-name: animationFromTableToPile;
+  animation-duration: 550ms;
+}
+
+@keyframes animationFromTableToPile {
+  35% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/*
+.card.animationCard_deck_hand {
+    animation-name: animationDeckToHand;
+    animation-duration: 400ms;
+}
+
+@keyframes animationDeckToHand {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+*/
+.cardBack,
+.cardFront {
+}
+
+.cardFront {
+}
+
+.cardBack {
+}
+
+.card.rotate180 {
+  animation-name: rotate180_animation;
+  animation-duration: 0.5s;
+}
+
+@keyframes rotate180_animation {
+  100% {
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+  }
+}
+
+.card:not(.back):not(.ghost),
+.trumpCards .trump .card {
+  border: 1px solid #636363;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.hand.hand_0 .card.selectedCard {
+  top: -50px;
+}
+
+.hand.hand_1 .card.selectedCard {
+  top: 50px;
+}
+
+.card.possibleMove,
+.card.selectedCard {
+  cursor: pointer;
+}
+
+.possible_move_style_highlight .card.possibleMove {
+  /*box-shadow: inset 0 0 0 1000px rgba(255, 255, 0, 0.5); */
+}
+
+#field.possible_move_style_pull_out .hand_0 .card.possibleMove {
+  top: -8px;
+}
+
+#field.possible_move_style_pull_out_no_trump .hand_0 .card.possibleMove {
+  top: -8px;
+}
+
+#field.possible_move_style_pull_out .hand_1 .card.possibleMove {
+  top: 8px;
+}
+
+#field.possible_move_style_pull_out_no_trump .hand_1 .card.possibleMove {
+  top: 8px;
+}
+
+.hand_1 .card.showedTrump {
+  top: 8px;
+}
+
+.hand_0 .handCard.card.DECK_TO_HAND {
+  top: -8px;
+}
+
+#field .hand_0 .card.pulledOut {
+  top: -8px;
+}
+
+#field .hand_1 .card.pulledOut {
+  top: 8px;
+}
+
+/*
+.card.possibleMove:hover {
+    top: -4px;
+}
+*/
+
+.hasState .card {
+  cursor: pointer;
+}
+
+.ghost {
+  visibility: hidden;
+  border: none;
+}
+
+.hand .handCard {
+  position: absolute;
+
+  /*z-index: 10;*/
+}
+
+.hand .handCard,
+.deckCards .card:first-child,
+.tableCard .card,
+.trumpCards .trump .card,
+.helloScreen .card {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*
+TEST OPTION
+.hand_0 .handCard {
+    width: 92px;
+    height: 130px;
+    background-size: 1220px!important;
+    transition: all 0.5s;
+}
+*/
+
+.hand .handCounter {
+  position: absolute;
+  width: 20px;
+  text-align: right;
+  transition: left 0.2s;
+  display: none;
+}
+
+.hand .handCounter.visibleCounter {
+  display: block;
+}
+
+.handCards_0 .handCounter {
+  top: 82px;
+}
+
+/*
+.hand .handCards .handCard {
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.handCards.less_12 .handCard {
+
+    margin-left: -25px;
+    margin-right: -25px;
+
+}
+
+.handCards.less_23 .handCard {
+    margin-left: -26px;
+    margin-right: -26px;
+}
+
+.handCards.less_28 .handCard {
+    margin-left: -28px;
+    margin-right: -28px;
+}
+
+.handCards.less_32 .handCard {
+    margin-left: -30px;
+    margin-right: -29px;
+}
+
+.handCards.less_52 .handCard {
+    margin-left: -32px;
+    margin-right: -32px;
+}
+*/
+
+.animationCards {
+  height: inherit;
+  width: inherit;
+}
+
+.animationCards .card {
+  z-index: 1;
+}
+
+.table {
+  /*width: 100%;*/
+  text-align: left;
+  position: absolute;
+  left: 180px;
+  top: 40%;
+  transition: top 0.5s;
+  -webkit-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  -o-transition: top 0.5s;
+}
+
+.table .tableCards .tableCard {
+  transition: top 2s;
+  -webkit-transition: top 2s;
+  -moz-transition: top 2s;
+  -o-transition: top 2s;
+}
+
+.table.rivalTake {
+  top: 32%;
+}
+
+.table.yourTake {
+  top: 47%;
+}
+
+.table .tableCards_0 {
+  margin-top: -50px;
+}
+
+/* TEST */
+.table .tableCards_1 {
+  margin-top: 50px;
+}
+
+.tableCards_0 .cardOver {
+  top: -50px;
+  position: absolute;
+}
+
+.tableCards_1 .cardOver {
+  top: 50px;
+  position: absolute;
+}
+
+.tableCard {
+  display: inline-block;
+  position: relative;
+  margin-right: -6.6px;
+  width: 71px;
+  height: 100px;
+}
+
+.pile {
+  position: absolute;
+  top: 40%;
+  right: 85px;
+}
+
+.pileCard {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.openedPile .pileCard.beatenPileCard:hover {
+  left: -70px !important;
+}
+
+.pileCard.suit_C {
+  transform: rotate(10deg);
+}
+
+.pileCard.suit_D {
+  transform: rotate(5deg);
+}
+
+.pileCard.suit_H {
+  transform: rotate(15deg);
+}
+
+.pileCard.suit_S {
+  transform: rotate(2deg);
+}
+
+/* Preview cards */
+
+.pileState {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  width: 280px;
+  display: none;
+}
+
+.pileState.wideWrapper {
+  width: 400px;
+}
+
+.pileState .twoColumnView {
+  margin-top: -45px;
+}
+
+.rivalState {
+  position: absolute;
+  left: 0px;
+  top: 126px;
+  width: 400px;
+  display: none;
+}
+
+.localState {
+  position: absolute;
+  left: 0;
+  bottom: 126px;
+  width: 350px;
+  display: none;
+}
+
+.cardsState .tableCard {
+  margin-right: -29px;
+}
+
+.cardsState .compactView_1 .tableCard {
+  margin-left: -29px;
+}
+
+.pileState .tableCard {
+  float: right;
+  height: 59px;
+}
+
+.rivalState .tableCard,
+.localState .tableCard {
+  float: left;
+}
+
+.cardsState .tableCards_1 .tableCard {
+  margin-top: -33px;
+}
+
+.cardsState .tableCards_1 .cardOver {
+  top: 33px;
+}
+
+.cardsState .tableCards_0 .cardOver {
+  top: -33px;
+}
+
+.cardsState .card {
+  transform: perspective(1px) scale(0.6);
+}
+
+/* D E C K */
+
+.deck {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 71px;
+  height: 100px;
+  z-index: 1;
+}
+
+.deck .deckCards {
+  height: inherit;
+}
+
+.deck .deckCards .card {
+  position: relative;
+}
+
+.deck .trumpCards .trump {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 44px;
+  width: 70px;
+  transition: margin-left 0.25s, top 0.3s ease-in;
+  top: 0px;
+}
+
+.deck .trumpCards .trumpState {
+  transform: scale(0.7);
+  position: absolute;
+  left: 50px;
+  top: -86px;
+  cursor: pointer;
+}
+
+.deck .deckCards .card {
+  position: absolute;
+}
+
+.deck .deckCards .card.back:nth-child(2) {
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+.deck .deckCount {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px black;
+  transition: margin 0.3s ease-in;
+}
+
+.openedPile .pileCard.card {
+  transform: scale(0.7);
+}
+
+.deck:not(.openedDeck) .deckCards .card {
+  transform: scale(1);
+}
+
+.openedDeck .deckCards .card {
+  transform: scale(0.7);
+}
+
+.deck.openedDeck .deckCards .card.cardSuit_S:not(:last-child)::after {
+  content: "\2660";
+  color: black;
+  margin-left: 52px;
+  font-size: 18px;
+}
+
+.deck.openedDeck .deckCards .card.cardSuit_D:not(:last-child)::after {
+  content: "\2666";
+  color: red;
+  margin-left: 52px;
+  font-size: 18px;
+}
+
+.deck.openedDeck .deckCards .card.cardSuit_C:not(:last-child)::after {
+  content: "\2663";
+  color: #2f4490;
+  margin-left: 52px;
+  font-size: 18px;
+}
+
+.deck.openedDeck .deckCards .card.cardSuit_H:not(:last-child)::after {
+  content: "\2665";
+  color: #ec691f;
+  margin-left: 52px;
+  font-size: 18px;
+}
+
+.deck .deckCards .card {
+  transition: top 0.3s ease-in, transform 0.2s;
+}
+
+.card_design_base .card {
+  /*
+    background: url('../img/romanovy.jpg');
+
+    */
+  background: url("../img/cards_sprite.png");
+}
+
+.card_design_simple .card {
+  background: url("../img/simple_cards_sprite.png");
+}
+
+.card_design_color .card {
+  background: url("../img/simple_cards_sprite_color.png");
+}
+
+.card_design_D04 .card {
+  background: url("../img/romanovy.jpg");
+}
+
+.card_design_D05 .card {
+  background: url("../img/istorycheskie.jpg");
+}
+
+.card_design_D06 .card {
+  background: url("../img/kazahskie_ckazki.jpg");
+}
+
+.card_design_D07 .card {
+  background: url("../img/modern.jpg");
+}
+
+.card_design_D08 .card {
+  background: url("../img/rokoko.jpg");
+}
+
+.card_design_D09 .card {
+  background: url("../img/russian_style.jpg");
+}
+.card_design_D10 .card {
+  background: url("../img/cards/saratovskie.jpg");
+}
+.card_design_D11 .card {
+  background: url("../img/cards/slavianskie.jpg");
+}
+.card_design_D12 .card {
+  background: url("../img/cards/hawai.jpg");
+}
+
+/* BACK IMAGE */
+
+.back_image_B04 .card.back {
+  background: url("../img/kazahskie_ckazki_rubashka.jpg?2");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.back_image_B05 .card.back {
+  background: url("../img/modern_rubashka.jpg?2");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.back_image_B06 .card.back {
+  background: url("../img/rokoko_rubashka1.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.back_image_B07 .card.back {
+  background: url("../img/rokoko_rubashka2.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.back_image_B08 .card.back {
+  background: url("../img/rokoko_rubashka3.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.back_image_B09 .card.back {
+  background: url("../img/rokoko_rubashka4.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.back_image_B10 .card.back {
+  background: url("../img/russian_style_rubashka.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.back_image_B11 .card.back {
+  background: url("../img/cards/rubashka/1.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B12 .card.back {
+  background: url("../img/cards/rubashka/2.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B13 .card.back {
+  background: url("../img/cards/rubashka/3.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B14 .card.back {
+  background: url("../img/cards/rubashka/4.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B15 .card.back {
+  background: url("../img/cards/rubashka/5.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B16 .card.back {
+  background: url("../img/cards/rubashka/6.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B17 .card.back {
+  background: url("../img/cards/rubashka/7.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B18 .card.back {
+  background: url("../img/cards/rubashka/8.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B19 .card.back {
+  background: url("../img/cards/rubashka/9.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B20 .card.back {
+  background: url("../img/cards/rubashka/10.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B21 .card.back {
+  background: url("../img/cards/rubashka/11.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B22 .card.back {
+  background: url("../img/cards/rubashka/12.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B23 .card.back {
+  background: url("../img/cards/rubashka/13.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B24 .card.back {
+  background: url("../img/cards/rubashka/14.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B25 .card.back {
+  background: url("../img/cards/rubashka/15.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B26 .card.back {
+  background: url("../img/cards/rubashka/16.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B27 .card.back {
+  background: url("../img/cards/rubashka/17.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B28 .card.back {
+  background: url("../img/cards/rubashka/18.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B29 .card.back {
+  background: url("../img/cards/rubashka/19.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B30 .card.back {
+  background: url("../img/cards/rubashka/20.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B31 .card.back {
+  background: url("../img/cards/rubashka/21.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B32 .card.back {
+  background: url("../img/cards/rubashka/22.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B33 .card.back {
+  background: url("../img/cards/rubashka/23.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B34 .card.back {
+  background: url("../img/cards/rubashka/24.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B35 .card.back {
+  background: url("../img/cards/rubashka/25.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B36 .card.back {
+  background: url("../img/cards/rubashka/26.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B37 .card.back {
+  background: url("../img/cards/rubashka/27.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B38 .card.back {
+  background: url("../img/cards/rubashka/28.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B39 .card.back {
+  background: url("../img/cards/rubashka/29.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B40 .card.back {
+  background: url("../img/cards/rubashka/30.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B41 .card.back {
+  background: url("../img/cards/rubashka/31.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B42 .card.back {
+  background: url("../img/cards/rubashka/32.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B43 .card.back {
+  background: url("../img/cards/rubashka/33.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B44 .card.back {
+  background: url("../img/cards/rubashka/34.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B45 .card.back {
+  background: url("../img/cards/rubashka/35.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B46 .card.back {
+  background: url("../img/cards/rubashka/36.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B47 .card.back {
+  background: url("../img/cards/rubashka/37.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B47 .card.back {
+  background: url("../img/cards/rubashka/37.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.back_image_B48 .card.back {
+  background: url("../img/cards/rubashka/hawai_rubashka.jpg");
+  border: 1px solid #404040;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.card.back,
+.back_image_checkered_1 .card.back {
+  background: url("../img/back.png?3");
+}
+
+.back_image_gradient_3 .card.back {
+  background: url("../img/back_gradient.png?2");
+  border: none;
+}
+
+.back_image_back .card.back {
+  background: url("../img/back_blue.png?2");
+  border: none;
+}
+
+.helloScreen .card.back {
+  margin-left: 15px;
+  margin-top: 8px;
+  position: absolute;
+  top: 0px;
+}
+
+/*
+    TRUMP SUITS
+*/
+.trumpSuit {
+  cursor: pointer;
+}
+
+.theme1 .trumpSuit {
+  background: url("../img/suits.png");
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 35px;
+  left: 80px;
+}
+
+.trumpSuit:before {
+  content: "\041A\043E\0437\044B\0440\044C";
+  position: absolute;
+  left: -71px;
+  top: 5px;
+}
+
+.lang__en .trumpSuit:before {
+  content: "Trump:";
+  position: absolute;
+  left: -71px;
+  top: 5px;
+}
+
+.theme1 .trumpSuit.trumpSuit_S {
+  background-position: -60px 0px;
+}
+
+.theme1 .trumpSuit.trumpSuit_C {
+  background-position: -90px 0px;
+}
+
+.theme1 .trumpSuit.trumpSuit_D {
+  background-position: 0px 0px;
+}
+.theme1 .trumpSuit.trumpSuit_H {
+  background-position: -30px 0px;
+}
+
+/*
+    â™  S P A D E S â™ 
+*/
+.card.S_2 {
+  background-position: -852px 96px;
+}
+
+.card.S_3 {
+  background-position: -781px 96px;
+}
+
+.card.S_4 {
+  background-position: -710px 96px;
+}
+
+.card.S_5 {
+  background-position: -639px 96px;
+}
+
+.card.S_6 {
+  background-position: -568px 96px;
+}
+
+.card.S_7 {
+  background-position: -497px 96px;
+}
+
+.card.S_8 {
+  background-position: -426px 96px;
+}
+
+.card.S_9 {
+  background-position: -355px 96px;
+}
+
+.card.S_10 {
+  background-position: -284px 96px;
+}
+
+.card.S_11 {
+  background-position: -213px 96px;
+}
+
+.card.S_12 {
+  background-position: -142px 96px;
+}
+
+.card.S_13 {
+  background-position: -71px 96px;
+}
+
+.card.S_14 {
+  background-position: 0px 96px;
+}
+
+/*
+    â™£ C L U B S â™£
+*/
+.card.C_2 {
+  background-position: -852px -96px;
+}
+.card.C_3 {
+  background-position: -781px -96px;
+}
+.card.C_4 {
+  background-position: -710px -96px;
+}
+.card.C_5 {
+  background-position: -639px -96px;
+}
+
+/* 6 of Clubs*/
+.card.C_6 {
+  background-position: -568px -96px;
+}
+/* 7 of Clubs*/
+.card.C_7 {
+  background-position: -497px -96px;
+}
+/* 8 of Clubs*/
+.card.C_8 {
+  background-position: -426px -96px;
+}
+/* 9 of Clubs*/
+.card.C_9 {
+  background-position: -355px -96px;
+}
+/* 10 of Clubs*/
+.card.C_10 {
+  background-position: -284px -96px;
+}
+/* Jack of Clubs*/
+.card.C_11 {
+  background-position: -213px -96px;
+}
+/* Queen of Clubs*/
+.card.C_12 {
+  background-position: -142px -96px;
+}
+/* King of Clubs*/
+.card.C_13 {
+  background-position: -71px -96px;
+}
+/* Ace of Clubs*/
+.card.C_14 {
+  background-position: 0px -96px;
+}
+
+/*
+    â™¦ D I A M O N D S â™¦
+*/
+.card.D_2 {
+  background-position: -852px 0px;
+}
+.card.D_3 {
+  background-position: -781px 0px;
+}
+.card.D_4 {
+  background-position: -710px 0px;
+}
+.card.D_5 {
+  background-position: -639px 0px;
+}
+/* 6 of Diamonds*/
+.card.D_6 {
+  background-position: -568px 0px;
+}
+/* 7 of Diamonds*/
+.card.D_7 {
+  background-position: -497px 0px;
+}
+/* 8 of Diamonds*/
+.card.D_8 {
+  background-position: -426px 0px;
+}
+/* 9 of Diamonds*/
+.card.D_9 {
+  background-position: -355px 0px;
+}
+/* 10 of Diamonds*/
+.card.D_10 {
+  background-position: -284px 0px;
+}
+/* Jack of Diamonds*/
+.card.D_11 {
+  background-position: -213px 0px;
+}
+/* Queen of Diamonds*/
+.card.D_12 {
+  background-position: -142px 0px;
+}
+/* King of Diamonds*/
+.card.D_13 {
+  background-position: -71px 0px;
+}
+/* Ace of Diamonds*/
+.card.D_14 {
+  background-position: 0px 0px;
+}
+
+/*
+    â™¥ H E A R T S â™¥
+*/
+
+.card.H_2 {
+  background-position: -852px -192px;
+}
+.card.H_3 {
+  background-position: -781px -192px;
+}
+.card.H_4 {
+  background-position: -710px -192px;
+}
+.card.H_5 {
+  background-position: -639px -192px;
+}
+
+/* 6 of Hearts*/
+.card.H_6 {
+  background-position: -568px -192px;
+}
+/* 7 of Hearts*/
+.card.H_7 {
+  background-position: -497px -192px;
+}
+/* 8 of Hearts*/
+.card.H_8 {
+  background-position: -426px -192px;
+}
+/* 9 of Hearts*/
+.card.H_9 {
+  background-position: -355px -192px;
+}
+/* 10 of Hearts*/
+.card.H_10 {
+  background-position: -284px -192px;
+}
+/* Jack of Hearts*/
+.card.H_11 {
+  background-position: -213px -192px;
+}
+/* Queen of Hearts*/
+.card.H_12 {
+  background-position: -142px -192px;
+}
+/* King of Hearts*/
+.card.H_13 {
+  background-position: -71px -192px;
+}
+/* Ace of Hearts*/
+.card.H_14 {
+  background-position: 0px -192px;
+}
+
+.openedDeck .card:hover {
+  transform: translateX(22px) scale(0.7);
+}
+
+.openedDeck .trump .card:hover {
+    transform: none;
+}
+
+/*#gameField .card.S_2 {
+    background-position: -8.2% 100.6%;
+}
+
+#gameField .card.S_3 {
+    background-position: -16.4% 100.6%;
+}
+
+#gameField .card.S_4 {
+    background-position: -24.7% 100.6%;
+}
+
+#gameField .card.S_5 {
+    background-position: -33% 100.6%;
+}
+
+#gameField .card.S_6 {
+    background-position: -41.3% 100.6%;
+}
+
+#gameField .card.S_7 {
+    background-position: -49.7% 100.6%;
+}
+
+#gameField .card.S_8 {
+    background-position: -58% 100.6%;
+}
+
+#gameField .card.S_9 {
+    background-position: -66.3% 100.6%;
+}
+
+#gameField .card.S_10 {
+     background-position: -74.6% 100.6%;
+}
+
+#gameField .card.S_11 {
+    background-position: -82.9% 100.6%;
+}
+
+#gameField .card.S_12 {
+    background-position: -91.2% 100.6%;
+}
+
+#gameField .card.S_13 {
+    background-position: -99.6% 100.6%;
+}
+
+#gameField .card.S_14 {
+    background-position: -107.8% 100.6%;
+}
+*/
+
+
+/*
+    Styles for game field
+*/
+
+#field {
+    height: 700px;
+    background: url('../img/bg.jpg');
+    background-size: 100% 100%;
+    padding-bottom: 0;
+}
+
+#gameField {
+
+    background: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    height: 690px;
+    width: 100%;
+    position: relative;
+    background-size: 100% 100%;
+    padding-bottom: 0;
+    font-size: 12pt;
+    color: #ffffff;
+    font-family: Verdana;
+}
+#chat-rules {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.gameArea,
+.bottomArea {
+  width: 730px;
+}
+
+.titleBand {
+  background: #4c4c4c !important;
+}
+
+.titleBand a {
+  background: #4c4c4c !important;
+}
+
+.gameArea {
+  border-color: #4c4c4c !important;
+}
+
+.controlPanel {
+  background: #f0f0f0;
+}
+
+#field {
+  position: relative;
+  width: 100%;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  min-height: 550px;
+}
+
+.informationMain img {
+  width: 100%;
+}
+
+#bottom-block {
+  margin: 0px -3px 0px 270px;
+}
+/*
+#description .description-wrapper p {
+    text-indent: 0px;
+}
+*/
+
+.headerLeft {
+  text-align: left;
+}
+
+.aboutCenter {
+  text-align: center;
+}
+
+.body-wrap__VK #left-block {
+  margin-right: 0px;
+}
+
+.body-wrap__VK #right-block {
+  margin-left: 0px;
+}
+
+#v6-settings {
+  z-index: 200 !important;
+  width: 490px;
+}
+
+.settingsSecondRow {
+  position: absolute;
+  display: inline-block;
+  left: 230px;
+}
+
+.controlPanelLayout {
+  background: white;
+}
+
+.cpButton {
+  background: none;
+  border-color: #b5b5b5;
+  text-shadow: none;
+  color: #333;
+  font-size: 13px !important;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+
+.top {
+  position: relative;
+  z-index: 5;
+}
+
+.top [data-name="SetupModes"] {
+  background: white;
+}
+
+.top > :first-child > * > * {
+  border-color: #b5b5b5;
+  color: #333;
+}
+
+.handPresetsWrapper {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+
+.handPresetsWrapper .noData {
+    text-align: center;
+    color: dimgray;
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 16px;
+    line-height: 18px;
+
+}
+
+.handPresetsWrapper .presetsData {
+    width: 255px;
+    height: 814px;
+    overflow: auto;
+    transition: height 0.3s;
+}
+
+.handPresetsWrapper .previewWrapper {
+    position: absolute;
+    width: inherit;
+    z-index: 101;
+    display: flex;
+    align-items: center;
+    background: whitesmoke;
+}
+
+.previewWrapper .previewRow.previewTrump {
+    padding: 0 0.3em;
+}
+.previewWrapper .previewData {
+    background: whitesmoke;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-right: none;
+    color: dimgray;
+    font-size: 12px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.previewData .previewRow:not(:first-child){
+    margin-top: 4px;
+}
+
+.handPresetsWrapper .cpButton {
+    width: auto;
+    font-weight: 100;
+    padding: 4px;
+}
+
+.handPresetsRow {
+    cursor: pointer;
+}
+
+.handPresetsRow:not(.userPreset) {
+    font-size: 0;
+}
+
+.handPresetsRow:hover {
+
+}
+
+.handPresetsWrapper .header {
+    font-size: 12px;
+    color: dimgray;
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+.handPresetsWrapper .header .col, .handPresetsDetails .col {
+    display: inline-block;
+    width: 33.333333%;
+    text-align: center;
+    height: inherit;
+    box-sizing:border-box;
+    padding: 4px 0;
+}
+
+.handPresetsWrapper .header .col {
+    float: left;
+    line-height: 17px;
+    position: relative;
+}
+
+.handPresetsWrapper .header .sorting {
+    position: absolute;
+    width: 100%;
+    top: 45px;
+}
+
+.handPresetsWrapper .header .col_1 {
+
+}
+
+.handPresetsWrapper .col:not(:last-child) {
+    border-right: 1px solid #ddd;
+
+}
+
+.handPresetsWrapper .handPresetsRow.selected .col:not(:last-child) {
+    border-color: transparent;
+
+}
+
+.handPresetsWrapper .handPresetsRow:hover {
+
+}
+
+.handPresetsDetails .col {
+    font-size: 12px;
+}
+
+.col.col_1 {
+
+}
+
+.handPresetsRow .handPresetPreview {
+    display: none;
+}
+
+.handPresetsRow:not(:last-child):not(.userPreset) {
+    border-bottom: 1px solid #ddd;
+}
+
+.handPresetsRow.selected {
+    background:#ffffca;
+}
+
+.handPresetsRow.next {
+    box-shadow: inset 0 0 0 2px blue;
+}
+
+/* Cards */
+.handPresetsCards {
+    font-size: 0;
+    padding-bottom:1em;
+}
+
+.handPresetsCards.first {
+    outline: 2px solid green;
+}
+
+.handPresetsCards.first::after {
+    display: block;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    content: "\2713";
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+    transform: translate(12px, -150%);
+}
+
+.previewOpponentCards .handPresetsCards.first::after {
+    transform: translate(12px, -250%);
+}
+
+.handPresetsCard {
+    display: inline-block;
+}
+
+.handPresetsCard .card {
+    width: 25px;
+    height: 45px;
+    zoom: 0.7;
+    border-radius: 0;
+}
+
+.handPresetsCard:not(:last-child) .card {
+    border-right: 0!important;
+}
+
+/* Details */
+
+.handPresetsDetails {
+
+}
+
+.handPresetsDetails .presetOption {
+    float: left;
+}
+
+.handPresetsDetails .detail {
+    display: inline-block;
+}
+
+.handPresetsDetails .detail:not(:first-child) {
+    margin-left: 8px;
+}
+
+.handPresetsDetails .buttonPreview {
+    border-bottom: 1px solid #006699;
+    color: #006699;
+}
+
+/* Fix for history table*/
+td.historypresetIndex {
+    width: 80px;
+    padding: 0;
+}
+
+/* Deck creator styles */
+.presetDialog {}
+
+.presetDialog .ui-dialog-titlebar {
+    display: none;
+}
+
+.presetDialog .dialogHeader {
+    height: 20px;
+}
+
+.presetDialog .dialogHeader .closeIcon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.presetDialog .deckRow .cardHome {
+    display: inline-block;
+    position: relative;
+}
+
+.presetDialog .deckOption {
+    color: #069;
+    border-bottom: 1px solid #069;
+    float: left;
+    cursor: pointer;
+}
+
+.presetDialog .deckOption:hover {
+    opacity: 0.8;
+}
+
+.presetDialog .presetCreatorRow:not(:first-child) {
+    margin-top: 40px;
+}
+
+.presetDialog .presetTitle {
+    height: 30px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+.presetDialog .columnsWrapper {
+    display: flex;
+    flex:1;
+    position: relative;
+}
+
+.presetDialog .text {
+    margin: 5px 0;
+}
+
+.presetDialog .errorOnFormMessage {
+    color: green;
+    float: right;
+    text-align: right;
+    width: 100%;
+    word-break: break-all;
+}
+
+.presetDialog .magicTool {
+    position: absolute;
+    background: url(../img/magic-tool.png);
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.presetDialog .magicTool:hover {
+    opacity: 0.8;
+}
+
+.columnsWrapper .column-first {
+    flex: 1;
+    order: 1;
+}
+
+.columnsWrapper .column-second {
+    flex: 1;
+    order: 2;
+}
+
+.columnsWrapper .column-third {
+    width: 15%;
+    order: 3;
+}
+
+
+.cardHome .card, .cardHome .cardPlace  {
+    width: 25px;
+    height: 45px;
+    border-radius: 0;
+}
+
+.cardHome .card {
+    z-index: 2;
+    cursor: url(../img/grab.cur), default !important;
+    transition: box-shadow 0.15s;
+}
+
+.cardHome .card.ui-draggable-dragging {
+    z-index: 3;
+    cursor: url(../img/grab.cur), default !important;
+}
+
+.cardHome .cardPlace {
+    background: url('../img/foil.png');
+    box-sizing: border-box;
+    border: 1px solid #636363;
+    z-index: 1;
+}
+
+.cardHome .covered {
+    box-shadow: inset 0 0 0 100px rgba(254, 254, 219, 0.7);
+}
+
+.cardHome .cardPlace.cardPlaceDragging {
+    box-shadow: inset 0 0 0 1px gray;
+}
+
+.cardHome .selectedCard {
+    border: 2px solid #81c784!important;
+}
+
+.cardHome .cardPlace.onBackgroundCardPlace {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.switchHandsIcon {
+    position: absolute;
+    font-size: 24px;
+    left: 35.5%;
+    top: 53%;
+    cursor: pointer;
+}
+
+.switchHandsIcon:hover {
+    opacity: 0.8;
+}
+
+/* My presets */
+.myPresetsHeader {
+    text-align: center;
+}
+
+
+.addMyPresetButton {
+    cursor: pointer;
+    color: #424242;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #BDBDBD;
+    padding: 4px 0;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.addMyPresetButton:hover {
+    border: 1px solid #9E9E9E;
+    background-color: #EEEEEE;
+}
+
+/* Next game options */
+
+.nextGameOptionsWrapper {
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.nextGameOption {
+    display: inline-block;
+}
+
+.nextGameOption:not(:first-child) {
+    margin-left: 10px;
+}
+
+.nextGameOption:not(.selected) {
+    cursor: pointer;
+}
+
+.nextGameOption.selected {}
+
+.nextGameSettingsWrapper {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.hiddenOptionsWrapper {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    top: 25px;
+}
+
+.hiddenOptionsWrapper:hover {
+    display: block;
+}
+
+.hiddenOptionsWrapper .hiddenOption {
+    cursor: pointer;
+    padding: 4px 12px;
+    border: 1px solid #BDBDBD;
+    text-align: left;
+}
+
+.hiddenOptionsWrapper .hiddenOption:not(:first-child) {
+    margin-top: -1px;
+}
+
+.hiddenOptionsWrapper .hiddenOption:hover {
+    background: #EEEEEE;
+}
+
+.handPresetsRow.userPreset {
+    padding: 4px 0;
+    font-size: 14px;
+    font-family: serif;
+}
+
+.handPresetsRow.userPreset .buttonPreview{
+    margin-left: 5px;
+}
+
+.handPresetsRow  .presetTitleText {
+    width: 39%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.presetOption {
+    float: right;
+    margin: 1px 3px;
+}
+
+.editIcon {
+    background: url(../img/edit.png);
+    background-size: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+.deleteIcon {
+    background: url(../img/trashbin.png);
+    background-size: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+/* Toggle Switch */
+
+.presetOptionFirstTurn {
+    padding: 0px 0px;
+    margin: 1px 0px;
+}
+
+.presetOptionFirstTurn span {
+    color: #4c4c4c;
+    transition: color 0.4s;
+    font-size: 13px;
+    font-family: Arial;
+    margin-right: 4px;
+}
+
+.presetOptionFirstTurn span.active {
+    border-bottom: 2px solid #006699;
+    color: #006699;
+    font-weight: bold;
+}
+
+
+.presetOptionFirstTurn span:hover{
+    color: #069;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 27px;
+    height: 14px;
+  }
+
+  .switch input {display:none;}
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4CAF50;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 14px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+html, body {
+    margin: 0px;
+}
+
+html {
+    /*
+    background-image: url('../img/bamboo.jpg');
+    */
+    background-color: gray;
+}
+
+body {
+    backface-visibility: hidden;
+}
+
+#main-wrapper {
+    width: 1018px;
+}
+
+#gbShow {
+    color: inherit;
+    float: none;
+    padding: 0;
+}
+
+.controlPanelLayout {
+    border: none;
+}
+
+.activeSelector {
+    background: #FFFFCA;
+    cursor: default !important;
+}
+
+.cpButton {
+    color: black;
+}
+
+.cpButton:active {
+    background: #e2e2e2;
+}
+
+.cpButton.disable {
+    opacity: 0.35;
+    cursor: default;
+    pointer-events: none;
+}
+
+li {
+    vertical-align: bottom;
+    list-style: none;
+}
+
+.activeSelector:hover {
+    background: #FFFFCA !important;
+}
+
+.menuWrapper {
+    height: 74px;
+    margin-top: 2px;
+}
+
+.menuWrapper ul {
+    line-height: 0;
+    font-size: 12px;
+    zoom: 1;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.menuWrapper li {
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+    vertical-align: middle;
+    height: 26px;
+    border: 1px solid #7a7a7a;
+    border-radius: 4px;
+    width: 24.3%!important;
+}
+
+.menuWrapper ul.secondRow li {
+    height: 40px;
+    line-height: 40px;
+    font-weight: 100;
+    width: 19.3%!important;
+}
+
+ .activeButton {
+    background: #FFFFCA!important;
+}
+
+.livePanelWrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 60; /* for dif layer cards*/
+}
+
+.livePanelWrapper .rewindPanel, .livePanelWrapper .ingamePanel {
+    display: inline-block;
+}
+
+.buttonWrapper {
+    border: 1px solid #ccc;border-radius: 3px;
+    display: inline-block;
+}
+
+.buttonWrapper__onTop {
+    font-size: 13px;
+    z-index: 1;
+    margin-top: 2px;
+}
+
+ .buttonWrapper__onTop__training {
+     top: 5px;
+     left: 2px;
+     right: auto;
+ }
+
+.playManagerButton {
+    display: inline-block;
+    padding: 2px 5px;
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    border: 1px solid #222;
+    cursor: pointer;
+    color: black;
+}
+
+.playManagerButton.disable {
+    color: gray;
+    cursor: default;
+}
+
+.playManagerButton.symbolButton {
+
+}
+
+.symbolButton .arrowWrapper {
+
+}
+
+
+.rewindPanel .playManagerButton {
+
+}
+
+.ingamePanel .eye {
+    /*
+    background-image: url('../img/eye-icon.png');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+    font-size: 12px;
+    text-align: center;
+    padding: 2px 4px!important;
+}
+
+.ingamePanel .eye.eye_Show {
+    background-color:#FFFFCA;
+
+    /*animation: pulsate 2s infinite;*/
+}
+
+@keyframes pulsate {
+    0% {background-color: whitesmoke;}
+    50% { background-color: #FF3530; }
+    100% {background-color: whitesmoke;}
+}
+
+
+.playManagerButton.playManagerArrow {
+    padding: 0px;
+}
+.playManagerButton.playManagerArrow:not(.eye) {
+    letter-spacing: -0.3em;
+    padding: 1px 4px;
+
+}
+
+
+
+
+.playManagerButton.playManagerArrow .arrowWrapper {
+    display: inline-block;
+    letter-spacing: normal;
+    text-align: center;
+    height: 20px;
+}
+
+.playManagerButton.playManagerArrow .arrowWrapper div {
+
+    position: relative;
+}
+
+.playManagerButton.playManagerArrow .arrowWrapper__start , .playManagerButton.playManagerArrow .arrowWrapper__end{
+    font-size: 12px;
+
+}
+
+ .playManagerButton.playManagerArrow .arrowWrapper__start div, .playManagerButton.playManagerArrow .arrowWrapper__end div {
+     padding-top: 2px;
+ }
+
+.playManagerButton.symbolButton.playManagerArrow .arrowWrapper__start, .playManagerButton.symbolButton.playManagerArrow .arrowWrapper__end {
+    width: 25px;
+}
+
+
+.playManagerButton.playManagerArrow .arrowWrapper__left, .playManagerButton.symbolButton.playManagerArrow .arrowWrapper__right {
+    width: 24px;
+    height: 20px;
+    font-size: 20px;
+
+}
+
+.type_computer .playManagerButton.playManagerArrow .arrowWrapper__left, .type_computer .playManagerButton.symbolButton.playManagerArrow .arrowWrapper__right {
+    width: 40px;
+    text-align: center!important;
+}
+
+.arrowWrapper__play {
+    width: 30px;
+    font-size: 15px;
+}
+
+
+.playManagerButton.playManagerArrow .arrowWrapper__left {
+
+}
+
+.playManagerButton.playManagerArrow .arrowWrapper__right {
+
+}
+
+.playManagerButton.playManagerArrow .arrowWrapper.arrowWrapper__left {
+    text-align: left;
+}
+
+/*
+.playManagerButton.playManagerArrow .arrowWrapper.arrowWrapper__left:hover, .playManagerButton.playManagerArrow .arrowWrapper.arrowWrapper__right:hover {
+    background-color: #e4e4e4;
+}
+
+
+.playManagerButton.playManagerArrow .arrowWrapper.arrowWrapper__left:active, .playManagerButton.playManagerArrow .arrowWrapper.arrowWrapper__right:active {
+    background-color: gainsboro;
+}
+*/
+.playManagerButton.playManagerArrow .arrowWrapper.arrowWrapper__right {
+    text-align: right;
+}
+
+
+
+.rewindPanel .pressable:not(.disabled) {
+    cursor: pointer;
+}
+
+.rewindPanel .pressable.disabled {
+    color:#BDBDBD;
+    cursor: default;
+}
+
+.spectatorRewind .playManagerButton__start.last-choise {
+    background-color: #F1F1F1;
+}
+
+.spectatorRewind .arrowWrapper .counter {
+    font-size: 10px;
+    position: absolute;
+    right: 2px;
+    top: 8px;
+    width: 25%;
+}
+
+
+.buttonWrapper__onTop .playManagerButton {
+
+}
+
+.buttonWrapper__onTop .arrowWrapper {
+    width: 133px;
+}
+
+ .buttonWrapper__onTop.buttonWrapper__onTop__training .arrowWrapper {
+     width: auto;
+ }
+
+ .rewind_symbol {
+     font-size: 90%;
+     line-height: 16px;
+ }
+
+ .arrowWrapper__play .rewind_symbol {
+     line-height: 24px;
+ }
+
+.rewindPanel .arrowWrapper:not(.disabled):active {
+    color: #069;
+}
+
+
+
+
+.history {
+    background: white;
+}
+
+.history table {
+    border-collapse: collapse;
+    width: 120px;
+    text-align: center;
+}
+
+.history table td {
+    border: 1px solid #f4f4f4;
+}
+
+.history .result_lose {
+    background: #FFE0EE;
+}
+
+.history .result_win {
+    background: #FFFFE0;
+}
+
+.history .result_draw {
+    background: #b3d1e0;
+}
+
+
+#gameField .player {
+  position: absolute;
+  width: 145px;
+  right: 0px;
+  font-size: 14px;
+  word-break: break-word;
+  line-height: 25px;
+}
+
+#gameField .player_1 {
+  top: 31%;
+}
+
+#gameField .player_0 {
+  top: 60%;
+}
+
+#gameField .player .userrank {
+  color: #ccc;
+  font-size: 8pt;
+  top: -12px;
+  position: absolute;
+  margin-left: -10px;
+}
+
+#gameField .player .userrank.stableRight {
+  right: 2px;
+}
+
+#gameField .player .userrank.onOneLine {
+  margin-left: 0px;
+}
+
+#gameField .player .username {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: inherit;
+  max-height: 24px;
+  white-space: nowrap;
+}
+
+#gameField .player .username:not(.computer):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#gameField .hand {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+#gameField .hand_0 {
+  bottom: 110px;
+  position: absolute;
+}
+
+#gameField .hand_1 {
+  top: 10px;
+  position: absolute;
+}
+
+#gameField .turn {
+  position: absolute;
+  top: 72%;
+  width: 100%;
+  text-align: center;
+}
+
+#gameField .turn.turn__top {
+  top: 115px;
+}
+
+#gameField .turn .text {
+  font-size: 16px;
+  text-shadow: 1px 1px 1px black;
+}
+
+#gameField .turn .time.timeMultiplayer {
+  width: 80px;
+  display: inline-block;
+}
+
+#gameField .turn .turnStatus,
+#gameField .turn .turnThrowTime,
+#gameField .turn .turnTime {
+  display: inline-block;
+}
+
+#gameField #buttons {
+  position: absolute;
+  top: 75.5%;
+  width: 100%;
+  text-align: center;
+}
+
+.card.selectedChoice {
+  box-shadow: 0 0 8px #4d90fe;
+}
+
+#buttons .rollbackChoice {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#gameField #buttons.buttons_1 {
+  top: 19.5%;
+  z-index: 10;
+}
+#gameField #buttons .playerButton {
+  width: 102px;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  height: 40px;
+  font-size: 14px;
+  background: rgb(221, 221, 221);
+}
+
+#gameField #buttons .playerButton:active,
+#gameField #buttons .playerButton:hover {
+  background: #ccc;
+}
+
+#gameField .score {
+  position: absolute;
+  top: 450px;
+  right: 20px;
+  width: 125px;
+  display: inline-flex;
+}
+
+#gameField .score .scoreTie {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  color: #ccc;
+  font-size: 12px;
+}
+
+#gameField .score span {
+  font-size: 15pt;
+  float: right;
+  top: -3px;
+  position: relative;
+}
+
+.helloScreen {
+  color: #eeeeee;
+  font-family: Arial;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.helloScreenTitle {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.helloScreenPlayWithComputer {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+
+.tournamentPreview {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  font-size: 14px;
+}
+
+.tournamentPreview [data-name="StartGameSetup"] {
+  background: #00000050;
+}
+
+.tournamentPreview [data-name="StartGameSetup"] > :last-child > :last-child {
+  color: #333;
+}
+
+.tournamentPreview [data-name="TournamentsContainer"] > :first-child {
+  box-shadow: none;
+  background: #00000050;
+}
+
+.tournamentPreview [data-name="CloseButton"] {
+  display: none;
+}
+
+.tournamentPreview [data-name="TournamentsList"] {
+    border: none;
+}
+
+.test_player_cards {
+  width: 200px;
+  min-height: 55px;
+  border-width: 2px;
+  text-transform: uppercase;
+
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.testPanel {
+  background-color: white;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.unactive_field {
+  background-color: gainsboro;
+}
+
+.test_player_cards.player_cards_1 {
+  border: solid red;
+}
+
+.test_player_cards.player_cards_0 {
+  border: solid green;
+}
+
+.test_player_cards.player_cards_deck {
+  border: solid gray;
+}
+
+.test_player_cards.buffer {
+  border: solid grey;
+}
+
+.gameResultMessage {
+  color: #eeeeee;
+  font-family: Trebuchet MS;
+  font-size: 16pt;
+  font-weight: bold;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 145px;
+}
+
+.gameActionMessage {
+  position: absolute;
+  bottom: 235px;
+  color: #eeeeee;
+  font-family: Trebuchet MS;
+  font-size: 15pt;
+  font-weight: bold;
+  height: 24px;
+  overflow: hidden;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.newgame-dialog {
+  width: 400px !important;
+}
+
+.newgame-dialog button {
+  width: 188px !important;
+}
+
+.newgame-dialog .ui-dialog-buttonpane {
+  padding: 0px !important;
+  text-align: center;
+}
+
+.saveComputerGameTitle {
+  color: green;
+}
+
+.saveComputerGameTitle.saveEnabled,
+.saveComputerGameTitle.loadGame {
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+
+.spectatorModeButton {
+  position: absolute;
+  right: 0px;
+  z-index: 50;
+  top: 0px;
+  color: white;
+  font-family: Verdana;
+  width: 180px;
+  padding: 4px 6px;
+}
+
+.spectatorModeButton .header {
+  font-size: 13px;
+}
+
+.spectatorModeButton img {
+  /*top: 0px!important;*/
+  cursor: pointer;
+}
+
+.spectatorModeButton.longHand {
+  background-color: #43a047;
+  color: white;
+  border-left: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-bottom-left-radius: 4px;
+  border-top: 1px solid #222;
+}
+
+.closeDescription {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+}
+
+.blueSmall {
+  font-size: 80%;
+  color: #00bcd4;
+}
+
+.errorMessage {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  background-color: white;
+  color: red;
+  border-radius: 2px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.canvas-status {
+  position: absolute;
+  top: 210px;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+.canvas-status span {
+  display: none;
+  padding: 8px 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e4e4e4;
+  color: #069;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.text.analysis {
+  font-size: 80%;
+  color: #ccc;
+}
+
+.startNewGameLabel {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.testPanelSwitcher {
+  width: 220px;
+}
+
+.testPanelSwitcher div {
+  background: black;
+  color: #ec407a;
+  cursor: pointer;
+  padding: 6px;
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1;
+  color: white;
+}
+
+.presetHeader {
+  position: absolute;
+  right: 5px;
+  font-size: 12px;
+}

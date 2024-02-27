@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head lang="ru"></head>
+<title>«Мокрая курица» — играть онлайн</title>
+<body>
+<link rel="stylesheet" href="style2.css">
+<div id="field">
+    <div id="game-field">
+        <div class="gameZona">
+            <div class="gameArea" id="gameArea">
+                <div class="player player_1">
+                    <div class="username computer" attr-username="Компьютер" attr-userid="0" title="Компьютер">
+                        Компьютер<span class="userrank onOneLine"></span></div>
+                </div>
+                <div class="player player_0">
+                    <div class="username " attr-username="Гость 71331765" attr-userid="79202482"
+                         title="Гость 71331765">Гость 71331765<span class="userrank ">—</span></div>
+                </div>
+                <!--            Открытые карты-->
+                <div class="table">
+                    <div class="tableCards tableCards_1 compactView_0 ">
+                        <div class="tableCard">
+                            <div class="card D_7 "></div>
+                            <div class="card cardOver S_9"></div>
+                        </div>
+                        <div class="tableCard">
+                            <div class="card C_7 "></div>
+
+                        </div>
+
+
+                        <div class="" style="position: absolute;
+            bottom: 0px;
+            font-size: 80%;
+            margin-left: 15px;">
+                        </div>
+                    </div>
+                </div>
+                <!--            Закрытая колода-->
+                <div class="deck">
+                    <div class="trumpCards">
+
+                        <div class="trump">
+                            <div class="card S_14 trump_card"></div>
+
+                        </div>
+                    </div>
+                    <div class="deckCards">
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                        <div class="card back"></div>
+                    </div>
+
+                    <div class="deckCount">22</div>
+                </div>
+                <!--            Открытая колода-->
+                <div class="pile">
+                    <div class="pileCards">
+                        <div class="pileCard card back suit_D"></div>
+                        <div class="pileCard card back suit_D"></div>
+                    </div>
+                    <div class="pileState cardsState">
+                        <div class="tableCards tableCards_0 compactView_0 ">
+                            <div class="tableCard">
+                                <div class="card D_12 "></div>
+                                <div class="card cardOver D_13"></div>
+                            </div>
+
+
+                            <div class="" style="position: absolute;
+            bottom: 0px;
+            font-size: 80%;
+            margin-left: 15px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--        Сообщения чей ход-->
+                <div class="turn">
+                    <div class="turnStatus">
+                        <span class="text">Ваш ход</span>
+                    </div>
+                    <div class="turnThrowTime"></div>
+                    <div class="turnTime"><span class="time" style=""></span></div>
+                </div>
+                <!--        Кнопка взять карты-->
+                <div id="buttons" class="buttons_0">
+                    <button class="playerButton" data-id="take_cards" data-card-class="">Взять карты</button>
+                </div>
+                <!--  Карты игроков-->
+                <div class="hand hand_0">
+                    <div class="handCards handCards_0 less_12">
+
+                        <div class="handCounter visibleCounter " style="left: 189.5px">5</div>
+
+                        <div class="handCard card
+                    S_6 trump_card" data-suit="S" data-value="6" data-left="219" style="left: 219px; z-index: 0;"></div>
+                        <div class="handCard card
+                    H_7" data-suit="H" data-value="7" data-left="257" style="left: 257px; z-index: 1;"></div>
+                        <div class="handCard card
+                    ghost" data-suit="S" data-value="9" data-left="295" style="left: 295px; z-index: 2;"></div>
+                        <div class="handCard card possibleMove
+                    C_10" data-suit="C" data-value="10" data-left="333" style="left: 333px; z-index: 3;"></div>
+                        <div class="handCard card possibleMove
+                    C_11" data-suit="C" data-value="11" data-left="371" style="left: 371px; z-index: 4;"></div>
+                        <div class="handCard card
+                    H_11" data-suit="H" data-value="11" data-left="409" style="left: 409px; z-index: 5;"></div>
+                    </div>
+                </div>
+                <div class="hand hand_1">
+                    <div class="handCards handCards_1 less_12">
+
+                        <div class="handCounter visibleCounter " style="left: 189.5px">4</div>
+
+                        <div class="handCard card
+                     back" data-left="219" style="left: 219px"></div>
+                        <div class="handCard card
+                     back" data-left="257" style="left: 257px"></div>
+                        <div class="handCard card
+                     back" data-left="295" style="left: 295px"></div>
+                        <div class="handCard card
+                     back" data-left="333" style="left: 333px"></div>
+                        <div class="handCard card
+                     ghost" data-left="371" style="left: 371px"></div>
+                        <div class="handCard card
+                     ghost" data-left="409" style="left: 409px"></div>
+                    </div>
+                </div>
+
+                <div class="animationCards"></div>
+                <div class="errorMessage"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
