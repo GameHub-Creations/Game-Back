@@ -1,7 +1,9 @@
-import uvicorn
+import json
+
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse
 from network.clients.html_client import html
+from app.games.chicken import ch
 
 app = FastAPI()
 
@@ -34,16 +36,20 @@ async def get():
 
 
 @app.websocket("/ws/{client_id}")
-async def websocket_endpoint(websocket: WebSocket, client_id: int, play):
+async def websocket_endpoint(websocket: WebSocket):
     await manager.connect(websocket)
     try:
         while True:
             data = await websocket.receive_text()
+            # Преобразовать строку в словарь
+            res_data = json.loads(data)
+            all_desk = ch.step(res_data)
+            # Преобразовать словарь с строку
             await manager.send_personal_message(f"You wrote: {data}", websocket)
-            await manager.broadcast(f"Client #{client_id} says: {data + play}")
+            await manager.broadcast(f"{all_desk}")
     except WebSocketDisconnect:
         manager.disconnect(websocket)
-        await manager.broadcast(f"Client #{client_id} left the chat")
+        await manager.broadcast(f"{all_desk}")
 
 # if __name__ == "__main__":
 #     uvicorn.run("network.server.main_server:app", host="127.0.0.1", port=8080, log_level="info")
